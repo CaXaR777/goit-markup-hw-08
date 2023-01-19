@@ -1,22 +1,40 @@
 .head {
   border-bottom: 1px solid $header-border;
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .head__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 
   &__list {
-    margin-left: 93px;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__item:not(:last-child) {
@@ -60,10 +78,23 @@
 }
 
 .list--contact {
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  margin-left: 96px;
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__item:not(:last-child) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -73,13 +104,19 @@
 
   display: flex;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: $cubic;
 
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   &:hover,
   &:focus {
     color: $accent-color;

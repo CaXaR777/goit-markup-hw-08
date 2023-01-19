@@ -20,6 +20,7 @@
   <body>
     <header class="head">
       <div class="container head__container">
+        <div class="menu"> 
         <nav class="nav">
           <a href="./index.html" class="logo"
             >Web<span class="logo--top">Studio</span></a
@@ -40,6 +41,14 @@
             </li>
           </ul>
         </nav>
+        <button class="menu-button js-open-menu " 
+    type="button"
+    aria-expanded="false">
+      <svg width="40px" height="40px">
+        <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+      </svg>
+    </button>
+    </div>
         <ul class="list list--contact">
           <li class="item list--contact__item">
             <a
@@ -87,13 +96,15 @@
             <li class="portfolio__item item">
               <a class="portfolio__link link" href="#">
                 <div class="card-photo">
-                  <img
-                    class="photo"
-                    src="./images/img2-1.jpg"
-                    width="370"
-                    alt="Ноутбук"
-                  />
-
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            srcset="./images/work-examples/desktop/project-01@1x.jpg 1x, ./images/work-examples/desktop/project-01@2x.jpg 2x, ./images/work-examples/desktop/project-01@3x.jpg 3x" />
+                    <source media="(min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/work-examples/tablet/project-01@1x.jpg 1x, ./images/work-examples/tablet/project-01@2x.jpg 2x, ./images/work-examples/tablet/project-01@3x.jpg 3x" />
+                    <source media="(max-width: 767px)"
+                            srcset="./images/work-examples/mobile/project-01@1x.jpg 1x, ./images/work-examples/mobile/project-01@2x.jpg 2x, ./images/work-examples/mobile/project-01@3x.jpg 3x" />
+                    <img src="./images/work-examples/desktop/project-01@1x.jpg" alt="Ноутбук" />
+                </picture>
                   <div class="card-overlay">
                     <p class="card-text text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -112,12 +123,16 @@
             <li class="portfolio__item item">
               <a class="portfolio__link link" href="#">
                 <div class="card-photo">
-                  <img
-                    class="photo"
-                    src="./images/img2-2.jpg"
-                    width="370"
-                    alt="Баскетбол"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            srcset="./images/work-examples/desktop/project-02@1x.jpg 1x, ./images/work-examples/desktop/project-02@2x.jpg 2x, ./images/work-examples/desktop/project-02@3x.jpg 3x" />
+                    <source media="(min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/work-examples/tablet/project-02@1x.jpg 1x, ./images/work-examples/tablet/project-02@2x.jpg 2x, ./images/work-examples/tablet/project-02@3x.jpg 3x" />
+                    <source media="(max-width: 767px)"
+                            srcset="./images/work-examples/mobile/project-02@1x.jpg 1x, ./images/work-examples/mobile/project-02@2x.jpg 2x, ./images/work-examples/mobile/project-02@3x.jpg 3x" />
+                    <img src="./images/work-examples/desktop/project-02@1x.jpg" alt="Два хлопці грають у баскетбол" />
+                </picture>
+                  
                   <div class="card-overlay">
                     <p class="card-text text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -138,13 +153,16 @@
             <li class="portfolio__item item">
               <a class="portfolio__link link" href="#">
                 <div class="card-photo">
-                  <img
-                    class="photo"
-                    src="./images/img2-3.jpg"
-                    width="370"
-                    alt="Логотип рибного
-            ресторану"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            srcset="./images/work-examples/desktop/project-03@1x.jpg 1x, ./images/work-examples/desktop/project-03@2x.jpg 2x, ./images/work-examples/desktop/project-03@3x.jpg 3x" />
+                    <source media="(min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/work-examples/tablet/project-03@1x.jpg 1x, ./images/work-examples/tablet/project-03@2x.jpg 2x, ./images/work-examples/tablet/project-03@3x.jpg 3x" />
+                    <source media="(max-width: 767px)"
+                            srcset="./images/work-examples/mobile/project-03@1x.jpg 1x, ./images/work-examples/mobile/project-03@2x.jpg 2x, ./images/work-examples/mobile/project-03@3x.jpg 3x" />
+                    <img src="./images/work-examples/desktop/project-03@1x.jpg" alt="Логотип рибного
+                    ресторану" />
+                </picture>
                   <div class="card-overlay">
                     <p class="card-text text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -163,12 +181,15 @@
             <li class="portfolio__item item">
               <a class="portfolio__link link" href="#">
                 <div class="card-photo">
-                  <img
-                    class="photo"
-                    src="./images/img2-4.jpg"
-                    width="370"
-                    alt="Навушники"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            srcset="./images/work-examples/desktop/project-04@1x.jpg 1x, ./images/work-examples/desktop/project-04@2x.jpg 2x, ./images/work-examples/desktop/project-04@3x.jpg 3x" />
+                    <source media="(min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/work-examples/tablet/project-04@1x.jpg 1x, ./images/work-examples/tablet/project-04@2x.jpg 2x, ./images/work-examples/tablet/project-04@3x.jpg 3x" />
+                    <source media="(max-width: 767px)"
+                            srcset="./images/work-examples/mobile/project-04@1x.jpg 1x, ./images/work-examples/mobile/project-04@2x.jpg 2x, ./images/work-examples/mobile/project-04@3x.jpg 3x" />
+                    <img src="./images/work-examples/desktop/project-04@1x.jpg" alt="Навушники" />
+                </picture>
                   <div class="card-overlay">
                     <p class="card-text text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -187,12 +208,15 @@
             <li class="portfolio__item item">
               <a class="portfolio__link link" href="#">
                 <div class="card-photo">
-                  <img
-                    class="photo"
-                    src="./images/img2-5.jpg"
-                    width="370"
-                    alt="Дві коробки"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            srcset="./images/work-examples/desktop/project-05@1x.jpg 1x, ./images/work-examples/desktop/project-05@2x.jpg 2x, ./images/work-examples/desktop/project-05@3x.jpg 3x" />
+                    <source media="(min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/work-examples/tablet/project-05@1x.jpg 1x, ./images/work-examples/tablet/project-05@2x.jpg 2x, ./images/work-examples/tablet/project-05@3x.jpg 3x" />
+                    <source media="(max-width: 767px)"
+                            srcset="./images/work-examples/mobile/project-05@1x.jpg 1x, ./images/work-examples/mobile/project-05@2x.jpg 2x, ./images/work-examples/mobile/project-05@3x.jpg 3x" />
+                    <img src="./images/work-examples/desktop/project-05@1x.jpg" alt="Дві коробки" />
+                </picture>
                   <div class="card-overlay">
                     <p class="card-text text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -211,12 +235,15 @@
             <li class="portfolio__item item">
               <a class="portfolio__link link" href="#">
                 <div class="card-photo">
-                  <img
-                    class="photo"
-                    src="./images/img2-6.jpg"
-                    width="370"
-                    alt="Монітор"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/work-examples/desktop/project-06@1x.jpg 1x, ./images/work-examples/desktop/project-06@2x.jpg 2x, ./images/work-examples/desktop/project-06@3x.jpg 3x" />
+                    <source media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="./images/work-examples/tablet/project-06@1x.jpg 1x, ./images/work-examples/tablet/project-06@2x.jpg 2x, ./images/work-examples/tablet/project-06@3x.jpg 3x" />
+                    <source media="(max-width: 767px)"
+                    srcset="./images/work-examples/mobile/project-06@1x.jpg 1x, ./images/work-examples/mobile/project-06@2x.jpg 2x, ./images/work-examples/mobile/project-06@3x.jpg 3x" />
+                    <img src="./images/work-examples/desktop/project-06@1x.jpg" alt="Монітор" />
+                </picture>
                   <div class="card-overlay">
                     <p class="card-text text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -237,13 +264,16 @@
             <li class="portfolio__item item">
               <a class="portfolio__link link" href="#">
                 <div class="card-photo">
-                  <img
-                    class="photo"
-                    src="./images/img2-7.jpg"
-                    width="370"
-                    alt="Кніга"
-                  />
-                  <div class="card-overlay">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            srcset="./images/work-examples/desktop/project-07@1x.jpg 1x, ./images/work-examples/desktop/project-07@2x.jpg 2x, ./images/work-examples/desktop/project-07@3x.jpg 3x" />
+                    <source media="(min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/work-examples/tablet/project-07@1x.jpg 1x, ./images/work-examples/tablet/project-07@2x.jpg 2x, ./images/work-examples/tablet/project-07@3x.jpg 3x" />
+                    <source media="(max-width: 767px)"
+                            srcset="./images/work-examples/mobile/project-07@1x.jpg 1x, ./images/work-examples/mobile/project-07@2x.jpg 2x, ./images/work-examples/mobile/project-07@3x.jpg 3x" />
+                    <img src="./images/work-examples/desktop/project-07@1x.jpg" alt="Книга з картинками" />
+                </picture>
+                  <div class="card-overlay"> 
                     <p class="card-text text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -263,12 +293,15 @@
             <li class="portfolio__item item">
               <a class="portfolio__link link" href="#">
                 <div class="card-photo">
-                  <img
-                    class="photo"
-                    src="./images/img2-8.jpg"
-                    width="370"
-                    alt="Бірка"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            srcset="./images/work-examples/desktop/project-08@1x.jpg 1x, ./images/work-examples/desktop/project-08@2x.jpg 2x, ./images/work-examples/desktop/project-08@3x.jpg 3x" />
+                    <source media="(min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/work-examples/tablet/project-08@1x.jpg 1x, ./images/work-examples/tablet/project-08@2x.jpg 2x, ./images/work-examples/tablet/project-08@3x.jpg 3x" />
+                    <source media="(max-width: 767px)"
+                            srcset="./images/work-examples/mobile/project-08@1x.jpg 1x, ./images/work-examples/mobile/project-08@2x.jpg 2x, ./images/work-examples/mobile/project-08@3x.jpg 3x" />
+                        <img src="./images/work-examples/desktop/project-08@1x.jpg" alt="Лейбл бірка" />
+                    </picture>
                   <div class="card-overlay">
                     <p class="card-text text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -287,13 +320,15 @@
             <li class="portfolio__item item">
               <a class="portfolio__link link" href="#">
                 <div class="card-photo">
-                  <img
-                    class="photo"
-                    src="./images/img2-9.jpg"
-                    width="370"
-                    alt="Людіна працює на
-            ноутбуці"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            srcset="./images/work-examples/desktop/project-09@1x.jpg 1x, ./images/work-examples/desktop/project-09@2x.jpg 2x, ./images/work-examples/desktop/project-09@3x.jpg 3x" />
+                    <source media="(min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/work-examples/tablet/project-09@1x.jpg 1x, ./images/work-examples/tablet/project-09@2x.jpg 2x, ./images/work-examples/tablet/project-09@3x.jpg 3x" />
+                    <source media="(max-width: 767px)"
+                            srcset="./images/work-examples/mobile/project-09@1x.jpg 1x, ./images/work-examples/mobile/project-09@2x.jpg 2x, ./images/work-examples/mobile/project-09@3x.jpg 3x" />
+                    <img src="./images/work-examples/desktop/project-09@1x.jpg" alt="Ноутбук з додатком Growing Business" />
+                </picture>
                   <div class="card-overlay">
                     <p class="card-text text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем

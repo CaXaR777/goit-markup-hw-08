@@ -1,48 +1,69 @@
 .client {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
   }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     color: $icon-bgc;
+    gap: 30px;
   }
 
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $icon-bgc;
     border-radius: 4px;
     color: $icon-bgc;
-
-    transition-property: color, border;
-    transition-duration: 250ms;
-    transition-timing-function: $cubic;
-
-    &:hover,
-    &:focus {
-      color: $accent-color;
-      border: 1px solid $accent-color;
+    @media screen and (min-width: 768px) {
+      width: 226px;
     }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+  }
+
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
   }
 }
 
 .client__item {
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 4);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 7);
   }
 }
 

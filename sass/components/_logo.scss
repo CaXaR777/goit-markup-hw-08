@@ -10,6 +10,8 @@
 
   text-decoration: none;
 
+  margin-right: 93px;
+
   &--top {
     color: $primary-black;
   }
@@ -19,6 +21,7 @@
 }
 
 .footer-logo {
+  margin-right: 0;
   margin-bottom: 20px;
   display: block;
 }
