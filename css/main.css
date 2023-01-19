@@ -325,6 +325,7 @@ button {
   background-color: #ffffff;
   padding: 10px 15px 48px 40px;
   position: fixed;
+  z-index: 999;
 }
 .mobile-menu.is-open {
   display: -webkit-box;
