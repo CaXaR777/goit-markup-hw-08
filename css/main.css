@@ -967,7 +967,7 @@ button {
     width: 170px;
   }
 }
-.client:hover, .client:focus {
+.client__link:hover, .client__link:focus {
   color: #2196f3;
   border: 1px solid #2196f3;
 }

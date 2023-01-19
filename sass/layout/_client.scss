@@ -45,17 +45,19 @@
     @media screen and (min-width: 1200px) {
       width: 170px;
     }
+
+    &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
   }
 
   transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: $cubic;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    border: 1px solid $accent-color;
-  }
+  
 }
 
 .client__item {
