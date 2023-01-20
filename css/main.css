@@ -543,6 +543,7 @@ button {
   .list--contact__link {
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 14px;
   }
 }
 .list--contact__link:hover, .list--contact__link:focus {
@@ -825,7 +826,7 @@ button {
   gap: 30px;
 }
 .team__title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 28px;
   line-height: 1.16;
   text-align: center;
@@ -835,6 +836,7 @@ button {
 @media screen and (min-width: 1200px) {
   .team__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 .team__text {
@@ -1353,7 +1355,7 @@ button {
 }
 .modal__title {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: -10px;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -1473,7 +1475,19 @@ textarea::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.modal-form__form {
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal-form__form {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__form {
+    width: 528px;
+  }
 }
 
 .form-checkbox {
